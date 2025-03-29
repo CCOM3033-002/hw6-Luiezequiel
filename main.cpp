@@ -56,10 +56,10 @@ void opcion_cilindro() {
 
     cout << fixed << setprecision(2);
 
-    if (letra == 'a' || letra == 'A')
+    if (letra == 'a')
         cout << "El volumen del cilindro es "<< calcular_Volumen(radio, altura) << endl;
 
-    else if (letra == 'b' || letra == 'B')
+    else if (letra == 'b')
         cout << " El area del cilindro es " << calcular_Area(radio, altura) << endl;
 
 }
@@ -75,7 +75,7 @@ void opcion_esfera() {
           << "\nSeleccion: ";
 
         cin >> letra;
-    }while(letra != 'a' && letra != 'B');
+    }while(letra != 'a' && letra != 'b');
 
 
     cout << endl << endl;
@@ -86,10 +86,10 @@ void opcion_esfera() {
     } while (radio < 0);
     cout << fixed << setprecision(2);
 
-    if (letra == 'a' || letra == 'A')
+    if (letra == 'a')
         cout << "El volumen de la esfera es "<< calcular_Volumen(radio) << endl;
 
-    else if (letra == 'b' || letra == 'B')
+    else if (letra == 'b')
         cout << " El area de la esfera es " << calcular_Area(radio) << endl;
 
 }
@@ -126,10 +126,10 @@ void opcion_prisma() {
     } while (altura < 0);
     cout << fixed << setprecision(2);
 
-    if (letra == 'a' || letra == 'A')
+    if (letra == 'a')
         cout << "El volumen del prisma rectangular es "<< calcular_Volumen(largo, ancho, altura) << endl;
 
-    else if (letra == 'b' || letra == 'B')
+    else if (letra == 'b')
         cout << " El area del prisma rectangular es " << calcular_Area(largo, ancho, altura)  << endl;
 
 }
@@ -149,15 +149,15 @@ void inicio() {
     cin>>letra;
 
     switch(letra) {
-        case 'A':
+        
         case 'a':
             opcion_cilindro();
             break;
-        case 'B':
+        
         case 'b':
             opcion_esfera();
             break;
-        case 'C':
+        
         case 'c':
             opcion_prisma();
             break;
